@@ -1,7 +1,7 @@
 en:
   projects:
     index:
-      title: 'Fundraising for civic projects | Civic Crowdfunding | CSR | Cause Marketing'
+      title: 'Help us fund high quality research data about our human history'
       recommended: 'Recommended'
       near: 'Projects Near'
       channels: 'Partners'
@@ -9,7 +9,7 @@ en:
       successful: 'Successful'
       coming_soon: 'Coming Soon'
       join:
-        join_the_neighborhood: 'Join the Neighborhood'
+        join_the_neighborhood: 'Join MicroPasts contributors'
         already_joined: 'Already joined? %{link}.'
         sign_in: 'Sign in'
       hero:
@@ -18,7 +18,7 @@ en:
       how-it-works:
         one:
           headline: 'For Companies'
-          text: 'Neighbor.ly is the best way to earn golden impressions while doing good in customer communities.'
+          text: 'Use MicroPasts to fund work.'
           button: 'Request a Demo'
         two:
           headline: 'For Communities'
@@ -26,7 +26,7 @@ en:
           button: 'Raise Money'
         three:
           headline: 'For Citizens'
-          text: 'Want to earn perks while enhancing cities? What you do matters. Welcome to the neighborhood.'
+          text: 'Want to earn perks while enhancing cities? What you do matters. Welcome to MicroPasts.'
           button: 'Find Projects'
       start-one:
         title: 'Have a community project in need of funding?'
