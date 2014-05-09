@@ -1,0 +1,30 @@
+rvm:
+  - 2.1.1
+
+before_install: gem update --remote bundler
+
+before_script:
+  - "cp config/database.sample.yml config/database.yml"
+  - "psql -c 'create role neighborly SUPERUSER LOGIN;' postgres"
+  - "psql -c 'create database neighborly_test;' -U neighborly postgres"
+  - "sh -e /etc/init.d/xvfb start"
+  - "bundle exec rake db:migrate"
+  - "RAILS_ENV=test bundle exec rake spec:javascript"
+
+env:
+  - DISPLAY=:99.0
+
+script:
+  - "bundle exec rspec spec"
+
+deploy:
+  provider: heroku
+  strategy: git
+  api_key:
+    secure: "tWSfGLGVFh1VPJxIlHzA+iVM8qjDsqmw+eQx0t3//pNJXCpSatS98Dzr8u/W8JXQlMH4mauKfFEVdIKmOQHLfi/yIFIxgjM4CrHOXgDZ7ZtXpzY5NiwUt7eXiCKdWalLmmkdt4vBL9GYTCuGk47HD9cRL8L6jySGxxgjV5zIYTg="
+  app: neighborly-staging
+  on:
+    repo: neighborly/neighborly
+  run:
+    - "rake db:migrate"
+    - restart

@@ -1,0 +1,32 @@
+nav.tabs
+  +clearfix
+  background: $tabs-bg
+  a
+    float: left
+    text-transform: uppercase
+    color: $body-font-color
+    padding:
+      top: +emCalc(25px)
+      bottom: +emCalc(25px)
+      left: +emCalc(15px)
+      right: +emCalc(15px)
+    font-size: 85%
+    &.selected, &.private.selected
+      background: $tabs-selected-bg
+    &:hover, &.private:hover
+      background: $tabs-hover-bg
+    .count
+      @extend .label
+      +radius(+emCalc(20px))
+      margin-left: +emCalc(10px)
+      font-size: 60%
+      top: -1px
+    &.private
+      background: darken($tabs-bg, 5%)
+
+
+.row
+  .columns
+    nav.tabs
+      margin-left: +emCalc(-15px)
+      margin-right: +emCalc(-15px)

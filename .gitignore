@@ -1,34 +1,32 @@
-*.gem
-*.rbc
-/.config
-/coverage/
-/InstalledFiles
-/pkg/
-/spec/reports/
-/test/tmp/
-/test/version_tmp/
-/tmp/
-
-## Specific to RubyMotion:
-.dat*
-.repl_history
-build/
-
-## Documentation cache and generated files:
-/.yardoc/
-/_yardoc/
-/doc/
-/rdoc/
-
-## Environment normalisation:
-/.bundle/
-/lib/bundler/man/
-
-# for a library or gem, you might want to ignore these files since the code is
-# intended to run in multiple environments; otherwise, check them in:
-# Gemfile.lock
-# .ruby-version
-# .ruby-gemset
-
-# unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
-.rvmrc
+.bundle
+db/*.sqlite3
+log/*.log
+tmp/**/*
+config/database.yml
+db/seeds/my-seeds-local.rb
+db/seeds/my-seeds-heroku.rb
+db/development_structure.sql
+# Vim
+*.swp
+*.dump
+coverage
+*.tmproj
+.DS_Store
+public/uploads/*chromedriver.log
+public/uploads/
+chromedriver.log
+.use_capybara_webkit
+config/locales/.wti
+npm-debug.log
+db/structure.sql
+.sass-cache
+Cookbooks
+.vagrant
+.project
+.secret.rvmrc
+spec/tmp/
+*.sublime-project
+*.sublime-workspace
+*.dot
+.ruby-version
+Thumbs.db

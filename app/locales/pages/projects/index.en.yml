@@ -1,0 +1,33 @@
+en:
+  projects:
+    index:
+      title: 'Fundraising for civic projects | Civic Crowdfunding | CSR | Cause Marketing'
+      recommended: 'Recommended'
+      near: 'Projects Near'
+      channels: 'Partners'
+      ending_soon: 'Ending Soon'
+      successful: 'Successful'
+      coming_soon: 'Coming Soon'
+      join:
+        join_the_neighborhood: 'Join the Neighborhood'
+        already_joined: 'Already joined? %{link}.'
+        sign_in: 'Sign in'
+      hero:
+        title: 'Invest in the places and civic projects <strong>you</strong> care about.'
+        subtitle: "You're the solution you've been waiting for."
+      how-it-works:
+        one:
+          headline: 'For Companies'
+          text: 'Neighbor.ly is the best way to earn golden impressions while doing good in customer communities.'
+          button: 'Request a Demo'
+        two:
+          headline: 'For Communities'
+          text: "If you have civic projects in need of new funding sources, you've come to the right place."
+          button: 'Raise Money'
+        three:
+          headline: 'For Citizens'
+          text: 'Want to earn perks while enhancing cities? What you do matters. Welcome to the neighborhood.'
+          button: 'Find Projects'
+      start-one:
+        title: 'Have a community project in need of funding?'
+        button: 'Start one in your area'

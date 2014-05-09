@@ -1,0 +1,18 @@
+= content_for :title, t('.titles.site')
+
+= render 'devise/shared/header'
+
+.row
+  .large-5.large-centered.columns
+    .login-box.animated.fadeIn
+      h3.text-center = t '.titles.header'
+      p.text-center.register_link
+        = t '.no_account_html', link: link_to(t('.links.register').html_safe, new_user_registration_path)
+      hr
+
+      .large-11.large-centered.columns
+        = simple_form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post}) do |f|
+          = render 'devise/shared/alert'
+          = f.input :email, as: :email, placeholder: t('.form.labels.email'), class: [:login, :email], required: true, label_html: { class: 'hidden-label' }
+
+          = f.submit t('.form.inputs.submit'), class: [:button, 'large-12', 'columns']

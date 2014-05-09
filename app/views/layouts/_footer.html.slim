@@ -1,0 +1,43 @@
+footer
+  .row
+    .large-4.medium-4.columns.quick-links
+      h6
+        i.icon-et-info-circled
+        = t('.quick_links')
+
+      ul
+        li = link_to t('.discover'), discover_path
+        li = link_to t('.start_campaign'), start_path
+        li = link_to t('.about'), about_path
+        li = link_to t('.how_it_works'), how_it_works_path
+        li = link_to t('.faq'), faq_path
+        li = link_to t('.legal'), privacy_path
+        li = link_to t('.terms'), terms_path
+        li = mail_to Configuration[:email_contact], t('.contact')
+
+    .large-4.medium-4.columns.now-acception-proposals
+      h6
+        i.icon-et-lamp
+        = t('.now_accepting_proposals')
+
+      .row
+        p.large-11.columns
+          = t('.now_accepting_proposals_text')
+          = link_to t('.we_want_to_help'), start_path, class: 'button'
+
+    .large-4.medium-4.columns.stay-in-touch
+      h6
+        i.icon-et-infinity
+        = t('.stay_in_touch')
+
+      .twitter-box
+        = link_to "Follow @#{::Configuration[:twitter_username]}", "http://twitter.com/#{::Configuration[:twitter_username]}", class: 'twitter-follow-button', data: { button: 'blue', :'text-color' => '#ffffff', :'link-color' => '#ffffff', width: '224px' }
+      .facebook-box
+        .fb-like data-href="#{Configuration['facebook_url']}" data-width="224" data-height="40" data-header="false" data-show-border="false" data-colorscheme="dark" data-layout="standard" data-action="like" data-show-faces="false" data-send="false"
+
+      = render 'layouts/newsletter'
+  .row.subfooter
+    .large-3.medium-3.columns
+      = link_to Configuration[:company_name], root_url, title: Configuration[:company_name], class: 'logo'
+    .large-6.medium-7.columns.pull-right
+      p = t('.built_with_love').html_safe

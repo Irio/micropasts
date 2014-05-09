@@ -1,0 +1,91 @@
+.home-page
+  header.hero
+    padding: +emCalc(45px) 0
+    min-height: +emCalc(200px)
+    h2
+      strong
+        color: #ffffee
+
+  section.how-it-works
+    padding: +emCalc(20px, 0)
+
+    &, h4
+      color: $secondary-font-color
+
+    .columns
+      padding: +emCalc(15px, 40px)
+      &:nth-child(2n)
+        border: 1px solid $border-color
+        border-top: none
+        border-bottom: none
+    h4
+      text-transform: uppercase
+      text-align: center
+    p
+      font-size: 85%
+      .button
+        display: block
+        margin-top: +emCalc(20px)
+
+  section.projects
+    padding: +emCalc(25px) 0
+
+    section
+      margin-bottom: +emCalc(20px)
+
+    [class*="column"]:last-child
+      float: left
+
+    h3
+      text-transform: uppercase
+      color: $secondary-font-color
+      font-weight: 300
+      margin-bottom: +emCalc(10px)
+      i
+        padding-right: +emCalc(5px)
+      a
+        color: $secondary-font-color
+
+  section.press
+    @extend .white
+    padding: +emCalc(45px) 0
+    border-top: 1px solid $border-color
+    a
+      float: left
+      margin-right: +emCalc(35px)
+      margin-right: +emCalc(20px)\9
+      opacity: 0.4
+      background: white
+      +single-transition(all, 0.5s)
+      &:hover
+        opacity: 1
+
+      &:last-child
+        float: right
+        margin-right: 0
+
+  section.start-one
+    a
+      display: block
+      background: white
+      padding: +emCalc(15px)
+      text-align: center
+      height: +emCalc(250px)
+      border: 1px solid transparent
+      +single-transition(all, 0.6s)
+      .button
+        margin-top: +emCalc(15px)
+        margin-bottom: +emCalc(5px)
+      .button.with-icon:after
+        @extend .icon-et-right-circled:before
+      h3
+        font-weight: bold
+        margin-left: auto
+        margin-right: auto
+        margin-top: +emCalc(15px)
+      &:hover
+        background: $box-hover-background-color
+        border: 1px solid white
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.30)
+        h3
+          color: $primary-color
