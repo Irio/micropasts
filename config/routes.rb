@@ -28,7 +28,7 @@ Neighborly::Application.routes.draw do
     mount Sidekiq::Web => '/sidekiq'
   end
 
-  mount CatarsePaypalExpress::Engine => "/", as: :catarse_paypal_express
+  #mount CatarsePaypalExpress::Engine => "/", as: :catarse_paypal_express
 
   # Non production routes
   if Rails.env.development?
@@ -36,7 +36,7 @@ Neighborly::Application.routes.draw do
   end
 
   # Channels
-  constraints subdomain: /^(?!www|secure|test|local|staging|crowfunded)(\w+)/ do
+  constraints subdomain: /^(?!www|secure|test|local|staging|crowdfunded)(\w+)/ do
     namespace :channels, path: '' do
       get '/', to: 'profiles#show', as: :profile
       resources :channels_subscribers, only: [:index, :create, :destroy]
