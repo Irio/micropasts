@@ -13,17 +13,17 @@ en:
         already_joined: 'Already joined? %{link}.'
         sign_in: 'Sign in'
       hero:
-        title: 'Invest in the places and civic projects <strong>you</strong> care about.'
+        title: 'Fundraising for archaeology, history and heritage projects'
         subtitle: "You're the solution you've been waiting for."
       how-it-works:
         one:
-          headline: 'For Companies'
-          text: 'Use MicroPasts to fund work.'
-          button: 'Request a Demo'
+          headline: 'Research you can do'
+          text: 'If you have a collaborative research project about the human past that needs funding, you have come to the right place to start a campaign.'
+          button: 'Learn about the concept'
         two:
-          headline: 'For Communities'
-          text: "If you have civic projects in need of new funding sources, you've come to the right place."
-          button: 'Raise Money'
+          headline: 'Research you can fund''
+          text: 'Want to discover research projects about a subject, region or period of human history you love? Want help fund, and develop closer links with, existing projects? Welcome to MicroPasts'"
+          button: 'Raise funds.'
         three:
           headline: 'For Citizens'
           text: 'Want to earn perks while enhancing cities? What you do matters. Welcome to MicroPasts.'
