@@ -30,3 +30,4 @@ spec/tmp/
 *.dot
 .ruby-version
 Thumbs.db
+/nbproject/*

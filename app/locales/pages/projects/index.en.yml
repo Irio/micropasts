@@ -14,15 +14,14 @@ en:
         sign_in: 'Sign in'
       hero:
         title: 'Fundraising for archaeology, history and heritage projects'
-        subtitle: "You're the solution you've been waiting for."
       how-it-works:
         one:
           headline: 'Research you can do'
           text: 'If you have a collaborative research project about the human past that needs funding, you have come to the right place to start a campaign.'
           button: 'Learn about the concept'
         two:
-          headline: 'Research you can fund''
-          text: 'Want to discover research projects about a subject, region or period of human history you love? Want help fund, and develop closer links with, existing projects? Welcome to MicroPasts'"
+          headline: 'Research you can fund'
+          text: 'Want to discover research projects about a subject, region or period of human history you love? Want help fund, and develop closer links with, existing projects? Welcome to MicroPasts'
           button: 'Raise funds.'
         three:
           headline: 'For Citizens'

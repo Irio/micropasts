@@ -39,7 +39,7 @@ head
     /meta tags for the whole site
     meta name="description"         content=t('site.description')
     meta name="keywords"            content=t('site.keywords')
-    
+
     /facebook opengraph
     meta property="og:title"        content=t('site.title')
     meta property="og:type"         content=:cause
@@ -48,17 +48,17 @@ head
     meta property="og:site_name"    content=::Configuration[:company_name]
     meta property="fb:app_id"       content=::Configuration[:facebook_app_id]
     meta property="og:description"  content=t('site.ograph.description')
-    meta property="og:locale"       content=en_GB
-    meta property="fb:type"         content=website
-    meta property="fb:admins"       content=688811070
+    meta property="og:locale"       content='en_GB'
+    meta property="fb:type"         content='website'
+    meta property="fb:admins"       content='688811070'
     /Twitter card
     meta property="twitter:card"    content=t('site.title')
     meta property="twitter:site"    content=::Configuration[:twitter_username]
-    meta property="twitter:title"   content="Applications"
+    meta property="twitter:title"   content='Applications'
     meta property="twitter:description" content=t('site.ograph.description')
     meta property="twitter:creator" content=::Configuration[:twitter_username]
     meta property="twitter:image:src"   content=image_url('MP_SQUARE_notype.png')
-    
+
   /[if lt IE 9]
     = javascript_include_tag "http://html5shiv.googlecode.com/svn/trunk/html5.js"
   = javascript_include_tag 'vendor/custom.modernizr', 'data-turbolinks-track' => true

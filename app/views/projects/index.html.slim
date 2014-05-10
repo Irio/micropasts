@@ -5,7 +5,6 @@
     .row
       .large-12.columns.large-centered
         h2 = t('.hero.title').html_safe
-        h3 = t('.hero.subtitle')
 
   section.how-it-works.white
     .row
@@ -107,6 +106,6 @@
   section.press
     .row
       - @press_assets.each do |asset|
-        
+
         = link_to asset.url, target: :blank, title: asset.title do
           = image_tag asset.image.thumb.url
