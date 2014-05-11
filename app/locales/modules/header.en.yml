@@ -1,9 +1,9 @@
 en:
   layouts:
     header:
-      start_campaign: 'Start A Campaign'
-      discover: 'Discover'
-      about: 'Learn'
+      start_campaign: 'Submit a project'
+      discover: 'Find projects'
+      about: 'About'
       sign-out: 'Log out'
       sign-up: 'Join'
       sign-in: 'Log in'

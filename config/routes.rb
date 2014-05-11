@@ -28,7 +28,7 @@ Neighborly::Application.routes.draw do
     mount Sidekiq::Web => '/sidekiq'
   end
 
-  #mount CatarsePaypalExpress::Engine => "/", as: :catarse_paypal_express
+  mount CatarsePaypalExpress::Engine => "/", as: :catarse_paypal_express
 
   # Non production routes
   if Rails.env.development?
@@ -67,12 +67,12 @@ Neighborly::Application.routes.draw do
           get 'video'
         end
       end
-      # NOTE We use index instead of create to subscribe comming back from auth via GET
+      # NOTE We use index instead of create to subscribe coming back from auth via GET
       resource :channels_subscriber, only: [:show, :destroy], as: :subscriber
     end
   end
 
-  mount Neighborly::Admin::Engine => '/admin/', as: :neighborly_admin
+  mount Neighborly::Admin::Engine => '/admin', as: :neighborly_admin
 
   # Root path should be after channel constraints
   root to: 'projects#index'
@@ -141,7 +141,7 @@ Neighborly::Application.routes.draw do
     end
   end
 
-  resources :users, path: 'neighbors' do
+  resources :users, path: 'users' do
     resources :questions, controller: 'users/questions', only: [:new, :create]
     resources :projects, controller: 'users/projects', only: [ :index ]
     resources :contributions, controller: 'users/contributions', only: [:index] do
@@ -174,7 +174,7 @@ Neighborly::Application.routes.draw do
   end
 
   # Redirect from old users url to the new
-  get "/users/:id", to: redirect('neighbors/%{id}')
+  #get "/users/:id", to: redirect('neighbors/%{id}')
 
   get "/set_email" => "users#set_email", as: :set_email_users
   get "/:id", to: redirect('projects/%{id}')

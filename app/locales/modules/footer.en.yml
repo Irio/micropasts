@@ -4,7 +4,7 @@ en:
       quick_links: 'About the project'
       about: 'Project team'
       discover: 'Find Projects'
-      start_campaign: 'Start a Campaign'
+      start_campaign: 'Submit a project'
       how_it_works: 'How It Works'
       contact: 'Contact Us'
       faq: 'FAQ / Help'
@@ -12,7 +12,4 @@ en:
       terms: 'Terms of Use'
       stay_in_touch: 'Become a Micropasts member?'
       built_with_love: 'An <a href="http://www.ahrc.ac.uk/">AHRC funded project</a> | Built on top of the <a href="http://github.com/luminopolis/neighborly">Neighborly project</a> and the original <a href="http://github.com/catarse/catarse">Catarse from Brazil</a> | <a href="http://github.com/findsorguk/MicroPasts">Open source and on Github</a>'
-      now_accepting_proposals: 'Now accepting proposals!'
-      now_accepting_proposals_text: 'Do you have a heritage project that needs funding?'
-      we_want_to_help: 'Can MicroPasts help?'
 
