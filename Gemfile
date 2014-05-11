@@ -56,8 +56,9 @@ gem 'simple_form', '~> 3.0.1'
 gem 'auto_html', '~> 1.6.1'
 gem 'kaminari'
 
-# CSS 
+# CSS
 gem 'bootstrap-sass', '~> 3.1.1.1'
+gem 'font-awesome-sass'
 
 # Uploads
 gem 'carrierwave', '~> 0.9.0'

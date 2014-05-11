@@ -55,3 +55,13 @@
               i.icon-et-linkedin-circled
             a href="https://twitter.com/adikeinan" target="_blank"
               i.icon-et-twitter-circled
+  .row
+    h6
+      |More about MicroPasts crowd-funding
+
+      ul
+        li = link_to t('.how_it_works'), how_it_works_path
+        li = link_to t('.faq'), faq_path
+        li = link_to t('.legal'), privacy_path
+        li = link_to t('.terms'), terms_path
+      = render 'layouts/newsletter'

@@ -7,19 +7,6 @@
     - else
       p = t('.empty')
 
-  - unless @filters.any?
-    - if @channels.any?
-      section.channels.default-list
-        .row
-          .large-12.columns
-            h3
-              i.icon-et-megaphone
-              = t('.channels')
-
-        .row
-          = render @channels
-
-
 - if request.xhr?
   = yield :page_content
 - else
