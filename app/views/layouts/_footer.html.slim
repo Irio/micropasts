@@ -1,22 +1,23 @@
 footer
   div.container
-    .row
-        .col-md-2
-          = image_tag 'about/bm_logo.png', title: 'Developed in Bloomsbury'
-        .col-md-2
-            = image_tag 'about/ucl-home_trans_small.png', title: 'UCL powered'
-        .col-md-2.col-md-offset-2
-            = image_tag 'about/AHRClogo.jpg', title: '2013 AHRC grantee'
+    .row.center
+        .col-md-3.col-md-offset-1
+          = image_tag 'about/bm_logo.png', class: 'logoFooter', title: 'Developed in Bloomsbury'
+        .col-md-3
+            = image_tag 'about/ucl-home_trans_small.png', class: 'logoFooter', title: 'UCL powered'
+        .col-md-3
+            = image_tag 'about/AHRClogo.jpg', class: 'logoFooter', title: '2013 AHRC grantee'
 
-  div.container
+  div.container id='footer_links'
     .row
-      div.center
-       ul.footerLinks
-         li
-           a<> href='mailto:info@micropasts.org' <i class="glyphicon glyphicon-envelope glyphicon-inverse"></i> Email
-         li
-           a<> href='http://twitter.com/micropasts' <i class="icon-et-twitter glyphicon-inverse"></i> Twitter
-         li>
-           a<> href='http://facebook.com/micropasts' <i class="icon-et-facebook glyphicon-inverse"></i> Facebook
-         li
-           a<> href='http://flickr.com/micropast' <i class="icon-et-flickr glyphicon-inverse"></i> Flickr
+      div.col-md-12
+        div.center
+          ul.footerLinks
+             li
+               a<> href='mailto:info@micropasts.org' <i class="glyphicon glyphicon-envelope glyphicon-inverse"></i> Email
+             li
+               a<> href='http://twitter.com/micropasts' <i class="icon-et-twitter glyphicon-inverse"></i> Twitter
+             li>
+               a<> href='http://facebook.com/micropasts' <i class="icon-et-facebook glyphicon-inverse"></i> Facebook
+             li
+               a<> href='http://flickr.com/micropast' <i class="icon-et-flickr glyphicon-inverse"></i> Flickr

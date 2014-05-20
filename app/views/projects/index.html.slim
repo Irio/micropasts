@@ -1,10 +1,28 @@
 - content_for :title, t('.title')
 
 .home-page
-  header.hero.center[data-image-url=image_path('home-hero.jpg')]
+  header.imageLead
     .row
-      .large-12.columns.large-centered
+      .col-md-12
         h2 = t('.hero.title').html_safe
+
+  div.container
+   row
+     row.col-md-4
+      h4 = t('.how-it-works.one.headline' )
+        p
+          = t('.how-it-works.one.text')
+          = link_to t('.how-it-works.one.button'), companies_contact_path, class: 'button'
+     row.col-md-4
+      h4 = t('.how-it-works.one.headline' )
+        p
+          = t('.how-it-works.one.text')
+          = link_to t('.how-it-works.one.button'), companies_contact_path, class: 'button'
+     row.col-md-4
+      h4 = t('.how-it-works.one.headline' )
+        p
+          = t('.how-it-works.one.text')
+          = link_to t('.how-it-works.one.button'), companies_contact_path, class: 'button'
 
   section.how-it-works.white
     .row
