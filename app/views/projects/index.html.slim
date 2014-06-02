@@ -1,63 +1,42 @@
 - content_for :title, t('.title')
 
-.home-page
-  header.imageLead
-    .row
+div.container
+  div.background
+    div.row.jumbotron
       .col-md-12
         h2 = t('.hero.title').html_safe
 
-  div.container.how-it-works.white
-   row
-     row.col-md-4.columns.one
+  div.row.well
+    div.col-md-4.center.info
       h4 = t('.how-it-works.one.headline' )
-        p
-          = t('.how-it-works.one.text')
-          = link_to t('.how-it-works.one.button'), companies_contact_path, class: 'button'
-     row.col-md-4
-      h4 = t('.how-it-works.one.headline' )
-        p
-          = t('.how-it-works.one.text')
-          = link_to t('.how-it-works.one.button'), companies_contact_path, class: 'button'
-     row.col-md-4
-      h4 = t('.how-it-works.one.headline' )
-        p
-          = t('.how-it-works.one.text')
-          = link_to t('.how-it-works.one.button'), companies_contact_path, class: 'button'
+      p
+        = t('.how-it-works.one.text')
+      p
+        = link_to t('.how-it-works.one.button'), how_it_works_path, class: 'btn btn-success'
+    div.col-md-4.center.info
+      h4 = t('.how-it-works.two.headline' )
+      p
+        = t('.how-it-works.two.text')
+      p
+        = link_to t('.how-it-works.two.button'), discover_path, class: 'btn btn-success'
+    div.col-md-4.center.info
+      h4 = t('.how-it-works.three.headline' )
+      p
+        = t('.how-it-works.three.text')
+      p
+        a href='http://community.micropasts.org' title='Our forum' class='btn btn-success' = t('.how-it-works.three.button')     
 
-  section.how-it-works.white
+  div.row.well.projects
     .row
-      .large-4.medium-4
-        h4 = t('.how-it-works.one.headline' )
-        p
-          = t('.how-it-works.one.text')
-          = link_to t('.how-it-works.one.button'), companies_contact_path, class: 'button'
-      .large-4.medium-4.columns.two
-        h4 = t('.how-it-works.two.headline' )
-        p
-          = t('.how-it-works.two.text')
-          = link_to t('.how-it-works.two.button'), start_path, class: 'button'
-      .large-4.medium-4.columns.three
-        h4 = t('.how-it-works.three.headline' )
-        p
-          = t('.how-it-works.three.text')
-          = link_to t('.how-it-works.three.button'), discover_path, class: 'button'
-
-  section.projects
-    .row
-      section.recommended
+      col-md-12.recommended
         h3
           = link_to discover_path(filter: 'recommended') do
-            i.icon-et-heart
+            i.glyphicon.glyphicon-plus
             = t('.recommended')
 
-        .row
+        .row.col-md-12
           = render 'project', project: @featured.first, large: true if @featured.any?
           = render 'project', project: @recommended.shift if @recommended.any?
-
-        /- if @recommended.any?
-          /.row
-            /- for project in @recommended
-              /= render 'project', project: project
 
         .text-right
           = link_to discover_path(filter: 'recommended'), class: 'see-more' do

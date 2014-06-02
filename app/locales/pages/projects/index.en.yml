@@ -2,7 +2,7 @@ en:
   projects:
     index:
       title: 'Help us fund high quality research data about our human history'
-      recommended: 'Recommended'
+      recommended: 'Featured projects'
       near: 'Projects Near'
       channels: 'Partners'
       ending_soon: 'Ending Soon'
@@ -13,20 +13,20 @@ en:
         already_joined: 'Already joined? %{link}.'
         sign_in: 'Sign in'
       hero:
-        title: 'Fundraising for archaeology, history and heritage projects'
+        title: 'MicroPasts: Crowd-funding'
       how-it-works:
         one:
           headline: 'Research you can do'
-          text: 'If you have a collaborative research project about the human past that needs funding, you have come to the right place to start a campaign.'
+          text: 'Do you have a collaborative research project about the human past that needs funding? MicroPasts is the right platform!'
           button: 'Learn about the concept'
         two:
           headline: 'Research you can fund'
-          text: 'Want to discover research projects about a subject, region or period of human history you love? Want help fund, and develop closer links with, existing projects? Welcome to MicroPasts'
+          text: 'Want to discover research projects about a subject, region or period of human history you love? Welcome to MicroPasts'
           button: 'Raise funds.'
         three:
-          headline: 'For Citizens'
-          text: 'Want to earn perks while enhancing cities? What you do matters. Welcome to MicroPasts.'
-          button: 'Find Projects'
+          headline: 'Research you can design'
+          text: 'Join our community and discuss project ideas. Our forum might be the place for you to find like minded collaborators.'
+          button: 'Discuss ideas'
       start-one:
         title: 'Have a community project in need of funding?'
         button: 'Start one in your area'
