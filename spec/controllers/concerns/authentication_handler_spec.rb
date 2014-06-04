@@ -5,22 +5,22 @@ describe Concerns::AuthenticationHandler do
 
   describe '#base_domain_with_https_url_params' do
     subject { controller.base_domain_with_https_url_params }
-    context 'when rails env is production and IS_STAGING is not setted' do
+    context 'when rails env is production and IS_STAGING is not set' do
       before do
         Rails.env.stub(:production?).and_return(true)
-        ::Configuration[:base_domain] = 'neighbor.ly'
+        ::Configuration[:base_domain] = 'crowdsourced.micropasts.org'
         ENV['IS_STAGING'] = nil
       end
 
       it 'returns a hash with protocol and host' do
         expect(subject).to eq({
           protocol: 'https',
-          host: 'neighbor.ly'
+          host: 'crowdsourced.micropasts.org'
         })
       end
     end
 
-    context 'when the env is production and IS_STAGING is setted' do
+    context 'when the env is production and IS_STAGING is set' do
       before do
         Rails.env.stub(:production?).and_return(true)
         ENV['IS_STAGING'] = 'true'
@@ -31,7 +31,7 @@ describe Concerns::AuthenticationHandler do
       end
     end
 
-    context 'when the env is not production and IS_STAGING is setted' do
+    context 'when the env is not production and IS_STAGING is set' do
       before do
         Rails.env.stub(:production?).and_return(false)
         ENV['IS_STAGING'] = 'true'
