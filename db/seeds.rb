@@ -122,8 +122,8 @@ puts 'Done!'
 
 puts 'Creating Admin user...'
   u = User.new name: 'Admin',
-               email: 'dpett@britishmuseum.org',
-               password: 'gr8tcour1',
+               email: '',
+               password: '',
                remote_uploaded_image_url: lorem_pixel_url('150/150', 'people')
   u.admin = true
   u.skip_confirmation!

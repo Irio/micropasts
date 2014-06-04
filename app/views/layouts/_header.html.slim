@@ -17,7 +17,7 @@ div.navbar.navbar-inverse.navbar-fixed-top role="navigation"
     div.navbar-collapse.collapse
       ul.nav.navbar-nav
         li
-          a<> href='http://micropasts.org' <i class="glyphicon glyphicon-home"></i> MicroPasts
+          a<> href='http://micropasts.org' <i class="glyphicon glyphicon-home"></i> MicroPasts home
         li
           = link_to about_path do
             i.glyphicon.glyphicon-info-sign
@@ -31,8 +31,6 @@ div.navbar.navbar-inverse.navbar-fixed-top role="navigation"
             i.glyphicon.glyphicon-bullhorn
             = t('.start_campaign')
       ul.nav.navbar-nav.navbar-right
-        li
-          span.user-actions[class="#{'un-signed-in' unless user_signed_in?}"]
         - if user_signed_in?
           = link_to edit_user_path(current_user), class: 'user-profile' do
             = image_tag current_user.display_image, size: "18x18", class: 'profile-picture', alt: ''
@@ -40,6 +38,5 @@ div.navbar.navbar-inverse.navbar-fixed-top role="navigation"
           span.divider |
           = link_to t('.sign-out'), destroy_user_session_url(base_domain_with_https_url_params), method: :delete, class: 'sign-out'
         - else
-          = link_to t('.sign-up'), new_user_registration_url(base_domain_with_https_url_params), class: 'sign-up'
-          span.divider |
-          = link_to t('.sign-in'), new_user_session_url(base_domain_with_https_url_params), class: 'sign-in'
+           li
+            = link_to t('.sign-in'), new_user_session_url(base_domain_with_https_url_params), class: 'glyphicon glyphicon-white glyphicon-signin'

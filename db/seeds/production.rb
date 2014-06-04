@@ -5,26 +5,26 @@ Sidekiq::Testing.fake!
 puts 'Creating Configuration entries...'
 
   {
-    company_name: 'Neighbor.ly',
+    company_name: 'MicroPasts',
     host: 'localhost',
-    base_url: 'http://localhost',
-    blog_url: 'http://blog.neighbor.ly',
+    base_url: 'http://crowdfunded.micropasts.org',
+    blog_url: 'http://research.micropasts.org',
     base_domain: 'localhost',
-    email_contact: 'howdy@neighbor.ly',
-    email_payments: 'books@neighbor.ly',
-    email_system: 'no-reply@neighbor.ly',
-    email_no_reply: 'no-reply@neighbor.ly',
-    facebook_url: 'http://www.facebook.com/NEIGHBORdotLY',
-    facebook_app_id: 255971384512404,
-    twitter_username: 'Neighborly',
+    email_contact: 'info@micropasts.org',
+    email_payments: 'info@micropasts.org',
+    email_system: 'info@micropasts.org',
+    email_no_reply: 'noreply@micropasts.org',
+    facebook_url: 'http://www.facebook.com/MicroPasts',
+    facebook_app_id: 1376278705957324,
+    twitter_username: 'MicroPasts',
     platform_fee: 0.05,
     support_forum: 'http://neighborly.uservoice.com/',
     project_finish_time: '02:59:59',
     secret_token: SecureRandom.hex(64),
     secret_key_base: SecureRandom.hex(64),
-    currency_charge: 'USD',
-    google_analytics_id: 'SOMETHING',
-    email_projects: 'ideas@neighbor.ly',
+    currency_charge: 'GBP',
+    google_analytics_id: 'UA-298202-17',
+    email_projects: 'info@micropasts.org',
     timezone: 'US/Central',
     devise_secret_key: SecureRandom.hex(64),
     balanced_api_key_secret: 'YOUR_API_KEY_SECRET_HERE',
@@ -125,7 +125,7 @@ puts 'Done!'
 
 puts 'Creating Category entries...'
 
-  categories = %w{Transit Bicycling Technology Entertainment Sports Recreation Schools Streetscapes Environment Restoration Event Mobility}
+  categories = %w{Crowdsourcing Geophysics 3D-imaging Exhibition Numismatics}
   categories.each do |c|
     Category.create! name_pt: c, name_en: c
   end
@@ -134,9 +134,9 @@ puts '---------------------------------------------'
 puts 'Done!'
 
 puts 'Creating Admin user...'
-  u = User.new name: 'Admin',
-               email: 'admin@admin.com',
-               password: 'password'
+  u = User.new name: '',
+               email: '',
+               password: ''
   u.admin = true
   u.skip_confirmation!
   u.confirm!
