@@ -16,3 +16,5 @@ en:
           inputs:
             submit: 'Log in'
             facebook: 'Log in with Facebook'
+            twitter: 'Log in with Twitter'
+            google: 'Log in with Google'
