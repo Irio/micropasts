@@ -1,4 +1,7 @@
 require 'ffaker'
+require 'factory_girl'
+factories_file = Rails.root.join('spec', 'factories.rb')
+eval(File.open(factories_file).read)
 
 # Disable sidekiq
 require 'sidekiq/testing'
@@ -9,9 +12,11 @@ def lorem_pixel_url(size = '100/100', type = 'city')
 end
 
 def generate_user
-  u = User.new name: Faker::Name.name,
-               email: Faker::Internet.email,
-               remote_uploaded_image_url: lorem_pixel_url('150/150', 'people')
+  u = FactoryGirl.create(:user,
+    email: Faker::Internet.email,
+    name: Faker::Name.name,
+    remote_uploaded_image_url: lorem_pixel_url('150/150', 'people')
+  )
   u.skip_confirmation!
   u.save
   u

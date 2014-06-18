@@ -107,6 +107,7 @@ group :development do
 end
 
 group :test, :development do
+  gem 'factory_girl_rails'
   gem 'rspec-rails', '~> 2.14.1'
   gem 'jasmine-rails', '~> 0.4.6'
   gem 'pry'
@@ -118,7 +119,6 @@ group :test do
   gem 'launchy'
   gem 'database_cleaner'
   gem 'shoulda'
-  gem 'factory_girl_rails'
   gem 'capybara',   '~> 2.2.1'
   gem 'coveralls', require: false
   gem 'selenium-webdriver', '~> 2.39.0'
