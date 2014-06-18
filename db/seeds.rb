@@ -74,7 +74,7 @@ puts 'Creating Configuration entries...'
     currency_charge: 'GBP',
     google_analytics_id: 'UA-298202-17',
     email_projects: 'info@micropasts.org',
-    timezone: 'London',
+    timezone: 'BST',
     devise_secret_key: SecureRandom.hex(64),
     #mailchimp_api_key: nil,
     #mailchimp_list_id: nil,
